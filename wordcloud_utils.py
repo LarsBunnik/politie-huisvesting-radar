@@ -31,6 +31,8 @@ STOP_WORDS = {
     # Common news words that add no signal
     "reuters", "bbc", "nos", "nu", "google", "nieuws", "news", "artikel",
     "lees", "lezen", "bekijk", "meer", "verder",
+    # HTML entity remnants
+    "nbsp", "amp", "quot", "apos", "lt", "gt",
 }
 
 

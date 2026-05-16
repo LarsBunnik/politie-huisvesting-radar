@@ -1,4 +1,5 @@
 import feedparser
+import html
 import json
 import os
 import hashlib
@@ -14,7 +15,9 @@ CACHE_TTL_SECONDS = 6 * 3600  # Refresh at most every 6 hours
 
 
 def _strip_html(text: str) -> str:
-    return re.sub(r"<[^>]+>", " ", text or "").strip()
+    text = re.sub(r"<[^>]+>", " ", text or "")
+    text = html.unescape(text)
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def _parse_date(entry) -> datetime | None:
