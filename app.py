@@ -115,7 +115,7 @@ else:
 
 # ── Header ────────────────────────────────────────────────────────────────────
 
-st.title("🏛️ Politie Huisvesting Radar")
+st.title("Politie Huisvesting Radar")
 
 col_h1, col_h2, col_h3 = st.columns(3)
 col_h1.metric("Artikelen in venster", len(window_articles))
