@@ -34,7 +34,7 @@ st.markdown("""
 with st.sidebar:
     st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Politie_logo.svg/200px-Politie_logo.svg.png", width=120)
     st.title("Huisvesting Radar")
-    st.caption("Strategisch nieuwsoverzicht voor vastgoedbeleid Politie Nederland")
+    st.caption("Kwartaallijks nieuwsoverzicht · DESTEP-analyse")
     st.divider()
 
     if st.button("🔄 Data verversen", use_container_width=True):
@@ -237,6 +237,6 @@ for tab, category in zip(tabs, DESTEP_CATEGORIES):
 
 st.divider()
 st.caption(
-    "Politie Huisvesting Radar · Beleidsmakers & Strategisch Adviseurs Huisvesting · "
+    "Politie Huisvesting Radar · "
     "Archief groeit met elke run · Bronnen: NOS, Nu.nl, Google News, BBC, The Guardian"
 )
