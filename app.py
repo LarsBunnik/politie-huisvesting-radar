@@ -32,7 +32,12 @@ st.markdown("""
 # ── Sidebar ──────────────────────────────────────────────────────────────────
 
 with st.sidebar:
-    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Politie_logo.svg/200px-Politie_logo.svg.png", width=120)
+    st.markdown(
+        '<div style="background:#1F3D7A; color:white; display:inline-block; '
+        'padding:6px 16px; border-radius:6px; font-weight:700; '
+        'font-size:1.1rem; letter-spacing:1px;">POLITIE</div>',
+        unsafe_allow_html=True,
+    )
     st.title("Huisvesting Radar")
     st.caption("Kwartaallijks nieuwsoverzicht · DESTEP-analyse")
     st.divider()
